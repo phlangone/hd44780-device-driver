@@ -1,0 +1,60 @@
+# .gitignore para projeto HD44780_DRIVER
+
+# Build artifacts
+/build/
+/out/
+/bin/
+/Debug/
+/Release/
+/dist/
+/target/
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+*.exe
+*.elf
+*.hex
+*.bin
+*.map
+*.lst
+*.d
+*.log
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# IDEs / editors
+.vscode/
+.vs/
+.idea/
+*.code-workspace
+
+# PlatformIO / Arduino
+.pio/
+.pioenvs/
+.arduino/
+
+# Python
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temp / backup
+*~
+*.swp
+*.bak
+*.tmp
+*.old
+
+# Environment / secrets
+.env
