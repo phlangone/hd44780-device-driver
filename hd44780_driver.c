@@ -31,7 +31,7 @@
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Paulo Henrique Langone");
-MODULE_DESCRIPTION("Driver HD44780 com interface I2C (PCF8574)");
+MODULE_DESCRIPTION("Driver HD44780 with I²C interface (PCF8574)");
 MODULE_VERSION("0.2.0");
 
 /** -------------------------------------------------------------------------
@@ -239,10 +239,10 @@ static const struct kernel_param_ops lcd_param_ops = {
 
 /* Parâmetros exportados via sysfs */
 module_param_cb(lcd_row, &lcd_param_ops, &lcd_row, S_IRUGO | S_IWUSR);
-MODULE_PARM_DESC(lcd_row, "Define a linha do cursor (0-3)");
+MODULE_PARM_DESC(lcd_row, "Set cursor line (0-3)");
 
 module_param_cb(lcd_col, &lcd_param_ops, &lcd_col, S_IRUGO | S_IWUSR);
-MODULE_PARM_DESC(lcd_col, "Define a coluna do cursor (0-15)");
+MODULE_PARM_DESC(lcd_col, "Set cursor column (0-15)");
 
 module_param_cb(lcd_clear_flag, &lcd_param_ops, &lcd_clear_flag, S_IRUGO | S_IWUSR);
 MODULE_PARM_DESC(lcd_clear_flag, "Set to 1 to clear display");
