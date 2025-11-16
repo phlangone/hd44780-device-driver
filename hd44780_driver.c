@@ -31,7 +31,7 @@
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Paulo Henrique Langone");
-MODULE_DESCRIPTION("Driver HD44780 com interface I2C (PCF8574) - sysfs + write()");
+MODULE_DESCRIPTION("Driver HD44780 com interface I2C (PCF8574)");
 MODULE_VERSION("0.2.0");
 
 /** -------------------------------------------------------------------------
